@@ -8,12 +8,7 @@ const generatePage = require('./lib/generate-page')
 module.exports = async (request, response) => {
   const query = parse(request.url, true).query
   const format = query ? query.format : false
-  const systems = (await get('https://systems.config.tfk.allthethings.win', {json: true})).body
-  const data = await Promise.all(Object.keys(systems).map((itemKey) => get(systems[itemKey].url, {json: true})))
-  const results = data
-    .map((response) => response.body)
-    .map((site) => Object.assign(site, systems[site.systemid]))
-    .map((system) => Object.assign({name: system.name, antall: system[system.field] || 0}))
+  const data = (await get('https://tfk-stats.firebaseio.com/tilskudd.json', {json: true})).body
 
-  send(response, 200, format === 'json' ? results : generatePage(results))
+  send(response, 200, format === 'json' ? data : generatePage(data))
 }
