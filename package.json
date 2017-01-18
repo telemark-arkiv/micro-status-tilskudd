@@ -1,7 +1,7 @@
 {
   "name": "micro-status-tilskudd",
   "description": "Microservice for tilskudd status",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "private": true,
   "author": {
@@ -27,7 +27,8 @@
   "keywords": [
     "microservice",
     "micro",
-    "timer spart",
+    "status",
+    "tilskudd",
     "Telemark fylkeskommune"
   ],
   "repository": {
@@ -39,6 +40,9 @@
   },
   "now": {
     "alias": "tilskudd.status.t-fk.win"
+  },
+  "greenkeeper": {
+    "emails": false
   },
   "devDependencies": {
     "coveralls": "2.11.15",
