@@ -1,7 +1,7 @@
 {
   "name": "micro-status-tilskudd",
-  "description": "Microservice for tilskudd status",
-  "version": "1.0.2",
+  "description": "Shows status for tilskudd",
+  "version": "2.0.0",
   "license": "MIT",
   "private": true,
   "author": {
@@ -33,10 +33,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/telemark/micro-status-antall.git"
+    "url": "http://github.com/telemark/micro-status-tilskudd.git"
   },
   "bugs": {
-    "url": "http://github.com/telemarks/micro-status-antall/issues"
+    "url": "http://github.com/telemarks/micro-status-tilskudd/issues"
   },
   "now": {
     "alias": "tilskudd.status.t-fk.win"
@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "got": "6.7.1",
+    "marked": "0.3.6",
     "micro": "6.2.0"
   }
 }
