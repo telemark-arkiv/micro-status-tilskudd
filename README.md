@@ -3,6 +3,8 @@
 
 # micro-status-tilskudd
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/micro-status-tilskudd.svg)](https://greenkeeper.io/)
+
 Shows status for tilskudd
 
 ## API
