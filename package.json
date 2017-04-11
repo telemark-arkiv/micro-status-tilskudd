@@ -1,7 +1,7 @@
 {
   "name": "micro-status-tilskudd",
   "description": "Shows status for tilskudd",
-  "version": "2.0.6",
+  "version": "2.0.9",
   "license": "MIT",
   "private": true,
   "author": {
@@ -46,13 +46,13 @@
   },
   "devDependencies": {
     "coveralls": "2.13.0",
-    "nsp": "2.6.2",
-    "standard": "8.6.0",
+    "nsp": "2.6.3",
+    "standard": "10.0.1",
     "tap": "10.2.0"
   },
   "dependencies": {
     "got": "6.7.1",
     "marked": "0.3.6",
-    "micro": "7.0.4"
+    "micro": "7.3.0"
   }
 }
