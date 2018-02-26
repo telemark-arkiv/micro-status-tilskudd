@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "got": "7.0.0",
-    "marked": "0.3.6",
+    "marked": "0.3.16",
     "micro": "7.3.3"
   }
 }
